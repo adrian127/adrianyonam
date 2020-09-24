@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#">Adrian Yonam</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <img src="img/yonam1.jpg" width="400" class="rounded-circle">
+            <h1 class="display-4">Basis Data II</h1>
+            <p class="lead">Tugas</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Bagaimana mengukur biaya sebuah Query?
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p> Proses pengambilan data dari database dalam memenuhi permintaan pemakai. 1. Parsing and translation. 2. Optimization. 3. Evaluation </p>
+                <p> 1. Parsing and translation melakukan check syntax & grammar, validasi relasi yang digunakan mengubah query/SQL ke dalam bentuk yg bisa diolah oleh Query Processing Engine dalam bentuk aljabar relasi, struktur (tree, graph).</p>
+                <p>2. Optimization Membuat evaluation plan yang optimal (dengan cost yang rendah).</p>
+                <p>3. Evaluation Pemilihan query-evaluation plan terbaik(cost) ,melakukan eksekusi terhadap query tersebut yang menghasilkan jawaban query. Strategi yang dipilih dalam evaluasi query tergantung pada estimasi biaya dari masing-masing strategi
+                    yang ada. Optimizer Query akan membuat informasi statistik yang disimpan dalam katalog DMBS untuk memperkirakan biaya dari sebuah rencana query. nr= Jumlah record dalam tabel r, br= Jumlah block yang menampung data pada tabel r, sr=
+                    Ukuran setiap record dari tabel r (dlm Byte), fr= blocking factor/jumlah record yg dapat ditampung oleh 1 blok, V(A,r) = Jumlah nilai unik yang ada pada atribut A di tabel r, SC(A,r)=rata-rata jumlah record yang memenuhi kondisi kesamaan
+                    terhadap atribut A. Biaya evaluasi query dapat diukur dari banyaknya sumber daya sistem yang digunakan, misl: pengaksesan disk,waktu CPU,dan waktu</p>
+            </div>
+            <div class="col">
+                <p>INTERMEZZO- Sejak tahun 1960-an penggunaan basis data sudah digunakan untuk bidang komersial, dimana pemrosesan file-nya masih berbasis manajemen file tradisional. Perkembangan komputer yang semakin pesat diikuti dengan perkembangan perangkat
+                    lunak untuk aplikasi bisnis, sejak tahun 1970-an sampai awal tahun 1980 manajemen berbasis file tradisional berkembang menjadi manajemen basis data. Di dalam manajemen basis data dikenal berbagai model data yang dapat digunakan untuk
+                    mendeskripsikan sebuah data dalam merancang suatu basis data. Manajemen ini memungkinkan banyak user untuk mengakses data secara bersamaan sehingga fasilitas yang dimiliki oleh manajemen sudah semakin banyak yaitu fasilitas pemanipulasian
+                    data, kontrol konkurensi data, recovery data, keamanan data dan didukung dengan fasilitas komunikasi data karena manajemen ini sudah terhubung dengan suatu jaringan . Perkembangan dunia usaha semakin meningkat ditunjang dengan perkembangan
+                    komunikasi yang mempermudah organisasi atau perusahaan untuk mengakses data, sehingga mengubah manajemen basis data menjadi manajemen basis data tingkat lanjut didukung dengan fasilitas data warehousing dan fasilitas basis data berbasis
+                    web sebagai salah satu strategi organisasi dalam meningkatkan kinerja dan keuntungan organisasi. Perkembangan komputer yang semakin pesat diikuti dengan perkembangan perangkat lunak untuk aplikasi bisnis, sejak tahun 1970-an sampai
+                    awal tahun 1980 manajemen berbasis file tradisional berkembang menjadi manajemen basis data. Di dalam manajemen basis data dikenal berbagai model data yang dapat digunakan untuk mendeskripsikan sebuah data dalam merancang suatu basis
+                    data. Manajemen ini memungkinkan banyak user untuk mengakses data secara bersamaan sehingga fasilitas yang dimiliki oleh manajemen sudah semakin banyak yaitu fasilitas pemanipulasian data, kontrol konkurensi data, recovery data, keamanan
+                    data dan didukung dengan fasilitas komunikasi data karena manajemen ini sudah terhubung dengan suatu jaringan. Perkembangan dunia usaha semakin meningkat ditunjang dengan perkembangan komunikasi yang mempermudah organisasi atau perusahaan
+                    untuk mengakses data, sehingga mengubah manajemen basis data menjadi manajemen basis data tingkat lanjut didukung dengan fasilitas data warehousing dan fasilitas basis data berbasis web sebagai salah satu strategi organisasi dalam
+                    meningkatkan kinerja dan keuntungan organisasi. Data Collection and Database Creation (1960s and earlier).</p>
+                <p><img src="img/yonam2.jpg" width="300"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Bagaimana Sistem db mengevaluasi Sebuah Ekspresi?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p> Evaluasi ekspresi- (1).Materialisasi, Menampung hasil operasi menggunakan tabel temporer(dimaterialkan) yang kemudian digunakan untuk evaluasi level berikutnya. (2).Pipeline, Mengganti tabel temporer dengan suatu pipeline operasi(berupa
+                    buffer). Penggunaan pipeline akan menghilangkan biaya pembacaan dan penulisan tabel-tabel temporer. Sebuah query adalah sebuah ekspresi bahasa yang menggambarkan data yang akan didapatkan kembali dari sebuah database. Dalam hubungannya
+                    dengan optimisasi query, seringkali diasumsikan bahwa query-query tersebut dinyatakan dalam sebuah dasar-dasar isi dan sekumpulan cara orientasi, yang memberikan optimizer pilihan-pilihan diantara alternatif prosedur-prosedur evaluasi.
+
+                </p>
+                <p> Query dapat digunakan pada beberapa keadaan. Kebanyakan aplikasi nyatanya adalah permintaan-permintaan secara langsung dari user yang memerlukan informasi tentang bentuk maupun isi dari database. Apabila permintaan user terbatas pada sekumpulan
+                    query-query standar, maka query-query tersebut dapat dioptimisasi secara manual oleh pemrograman prosedur-prosedur pencarian gabungan dan membatasi input dari user pada sebuah ukuran menu. Tetapi bagaimanapun juga, sebuah sistem optimisasi
+                    query otomatis menjadi penting apabila query-query khusus ditanyakan dengan menggunakan bahasa query yang digunakan secara umum seperti SQL.
+                </p>
+            </div>
+            <div class="col">
+                <p>Membicarakan tentang query, sangat erat hubungannya dengan cara penulisan query tersebut ke dalam sebuah bentuk bahasa yang mudah dimengerti. Pada umumnya, bahasa query yang digunakan untuk mengekspresikan sebuah pernyataan dari query
+                    adalah SQL (Structure Query Language). SQL adalah sebuah bahasa database yang luas yang memiliki statement-statement (pernyataan) untuk definisi data, query dan update data (memperbaharui data). SQL mempunyai satu statement dasar untuk
+                    mendapatkan kembali informasi dari sebuah database. Statement dasar dari SQL adalah SELECT. Hubungan Database Dengan Pemrosesan Query, Database adalah kumpulan dari data-data yang berhubungan satu sama lainnya yang digunakan untuk
+                    pencarian suatu data tertentu pada saat SQL query dijalankan. Sebuah database dirancang, dibuat dan ditempati oleh data dengan tujuan tertentu. Di dalam sistem database relasional, tabel-tabel dari database saling berhubungan satu
+                    sama lainnya. Dan sebuah tabel database akan selalu memiliki attribute names (nama-nama attribute), relation names (nama-nama relasi), dan tuples (record-record).</p>
+                <p><img src="img/yonam3.jpg" width="300"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Bagaimana Sistem db mengevaluasi Multiple Ekspresi?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Ketika dibandingkan Multiple Expression dan Multiple Transformation, perbedaan terdapat pada performa kedua pendekatan tersebut, ketika Multiple Expression dimasukkan ke dalam kolom transformasi menghasilkan waktu sekitar 02,797 detik,
+                    sedangkan ketika dimasukkan pada Multiple Transformation menghasilkan sekitar 03,329 detik. Setiap komponen memiliki.
+
+                </p>
+                < </div>
+                    <div class="col">
+                        <p> Tahapan eksekusi sendiri (Validasi, Pre Execute, Execute, Post Execute) yang membutuhkan waktu lebih lama. Jika dibandingkan antara kedua pendekatan ini ( Multiple Expression dan Multiple Transformation ), Multiple Expression mempunyai
+                            kelebihan dari segi kinerja karena lebih efisien sedangkan Multiple Transformation mempunyai kelebihan dari segi memberi penanganan kesalahan yang lebih mudah.</p>
+                        <p><img src="img/yonam4.jpg" width="300"></p>
+                    </div>
+            </div>
+
+        </div>
